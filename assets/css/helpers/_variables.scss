@@ -11,25 +11,18 @@ $RWD: (
 // 顏色, 使用 (rwd尺寸-)tx-key值 or (rwd尺寸-)bg-key值 or (rwd尺寸-)border-key值
 $colors: (
   'white':#fff,
-  'black':#000,
-  'primary':#4A90E2,
-  'link':#00408B,
-  'info':#FFF2DC,
-  'success':#3db891,
-  'danger':#D0021B,
-  'warning':#F5A623,
-  'cancel':#c4c4c4,
-  'gray-100':#F2F2F2,
-  'gray-200':#E1E1E1,
-  'gray-300':#C8C8C8,
-  'gray-400':#757575
+  'black':#333333,
+  'primary':#73C0D8,
+  'child':#FFA573,
+  'info':rgb(224, 246, 21),
+  'gray-100':#B2B2B2,
+  'gray-200':#A5A5A5,
+  'gray-300':#666666
   );
 
 // 字形大小, 使用 (rwd尺寸-)font-key值
 $font-size: (
-  'xxl': 28px,
-  'xl': 24px,
-  'l': 20px,
+  'l': 28px,
   'n': 16px,
   'm': 14px,
   's': 12px

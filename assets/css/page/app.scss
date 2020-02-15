@@ -1,7 +1,39 @@
-.p {
-  &-index{
-
+.bg{
+  &__Block {
+    @include position(fixed,0,0,0,0);
+    background: #73C0D8;
+    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 70% 100%);
   }
+
+  &__text{
+    margin: 0;
+    font: 54px/72px 'Segoe UI';
+    color: #666666;
+
+    &--en{
+      @include position(fixed,null,null,null,6%);
+      top:calc(15% + 195px);
+      display: inline-block;
+      transform: rotate(90deg);
+      transform-origin: left;
+    }
+
+    &--zh{
+      @include position(fixed,15%,null,null);
+      left:calc(6% + 50px);
+      display: inline-block;
+      width: 50px;
+      font-weight: bold;
+    }
+  }
+}
+
+.wrap{
+  @include position(fixed,8%,5%,8%,15%);
+  border: 0;
+  border-radius: 18px;
+  background: #333333;
+  box-shadow: 10px 10px 20px #00000029;
 }
 
 #map{
