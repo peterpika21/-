@@ -15,7 +15,10 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.8.0",
-    "nuxt": "^2.9.2"
+    "leaflet": "^1.6.0",
+    "nuxt": "^2.9.2",
+    "osm": "^1.0.0",
+    "vue2-leaflet": "^2.5.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

@@ -1,4 +1,4 @@
-# 使用 json server 模擬 API
+# 使用 osm 與 leaflet 套件
 
-1. npm install -g json-server
-2. json-server -p 5000 db.json
+- npm install
+- npm run dev
