@@ -28,24 +28,28 @@
             p.mb-1.font-m.tx-gray-300 {{ item.properties.phone }}
             
             div.d-flex.tx-white
-              div.mr-4.py-1.px-3.flex-1.bg-primary.round-l.border-0.font-m.weight-l.d-flex.justify-content-between
+              div.mr-4.py-1.px-3.flex-1.bg-primary.round-l.border-0.font-m.weight-l.d-flex.justify-content-between(:class="{'bg-gray-200':(item.properties.mask_adult === 0)}")
                 span 成人口罩
                 span {{ item.properties.mask_adult }}
-              div.py-1.px-3.flex-1.bg-child.round-l.border-0.font-m.weight-l.d-flex.justify-content-between
+              div.py-1.px-3.flex-1.bg-child.round-l.border-0.font-m.weight-l.d-flex.justify-content-between(:class="{'bg-gray-200':(item.properties.mask_child === 0)}")
                 span 兒童口罩 
                 span {{ item.properties.mask_child }}
 
       // 地圖
-      div#map
+      gmap-map( :center="center" :map-type-id="'terrain'" :zoom="5")
+        gmap-marker(v-for="(item, index) in markers"
+        :key="index"
+        :position="item.position"
+        @click="center = item.position")
 </template>
 
 <script>
-// import L from 'leaflet'
-
 export default {
   data() {
     return {
-      mapData: []
+      mapData: [],
+      center: { lat: -3.350235, lng: 111.995865 },
+      markers: [{ position: { lat: -0.48585, lng: 117.1466 } }, { position: { lat: -6.9127778, lng: 107.6205556 } }]
     }
   },
   mounted() {

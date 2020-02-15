@@ -46,7 +46,7 @@ module.exports = {
   css: ['@/assets/css/main.scss'],
 
   // Nuxt.js 擴展
-  modules: ['@nuxtjs/axios', 'nuxt-purgecss'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/dotenv', 'nuxt-purgecss'],
 
   // 客製化配置 nuxt 應用路由
   router: {
@@ -67,6 +67,10 @@ module.exports = {
   plugins: [
     {
       src: '~/plugins/axios.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/google-maps.js',
       ssr: false
     }
   ],
