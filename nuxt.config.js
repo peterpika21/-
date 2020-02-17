@@ -51,7 +51,7 @@ module.exports = {
   // 客製化配置 nuxt 應用路由
   router: {
     // 配合 github deploy 用
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt/' : '',
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/Mask-Map/' : '',
 
     mode: 'history',
     routes: [
