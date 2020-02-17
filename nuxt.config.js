@@ -5,7 +5,7 @@ module.exports = {
 
   // head 配置
   head: {
-    titleTemplate: '自我練習',
+    titleTemplate: '口罩地圖',
     meta: [
       {
         charset: 'utf-8'
@@ -17,7 +17,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: '自我練習'
+        content: '口罩地圖'
       }
     ],
     link: [
@@ -46,7 +46,7 @@ module.exports = {
   css: ['@/assets/css/main.scss'],
 
   // Nuxt.js 擴展
-  modules: ['@nuxtjs/axios', '@nuxtjs/dotenv', 'nuxt-purgecss'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/dotenv'],
 
   // 客製化配置 nuxt 應用路由
   router: {
