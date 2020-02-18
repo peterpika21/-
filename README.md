@@ -1,4 +1,4 @@
-# 使用 osm 與 leaflet 套件
+# 使用 google map
 
 - npm install
 - npm run dev
